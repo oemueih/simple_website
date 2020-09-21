@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.header-title {
+    font-size: xx-large;
+    color: white;
+}
+
+.header-login {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+    background-color: deeppink;
+    color: white;
+}
+
+.header-login:hover {
+    background-color: fuchsia;
+}
+
+
+/*  */
+
+.nav-top {
+    background-color: rgb(87, 77, 77);
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav-top ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.nav-top ul li {
+    float: left;
+    padding: 10px 0px;
+}
+
+.nav-top ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.nav-top ul li:hover {
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.nav-top .fa-angle-down {
+    margin-left: 5px;
+    font-size: small;
+}
+
+.nav-top .fa-home {
+    margin-right: 5px;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: rgb(87, 77, 77);
+    width: 200px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.dropdown-container ul {
+    padding: 0px;
+}
+
+.dropdown-container ul li {
+    float: none;
+}
+
+.drop-item:hover .dropdown-container {
+    display: block;
+}
+
+
+/*  */
+
+.col-main {
+    width: 65%;
+    float: left;
+    padding: 10px;
+    color: white;
+}
+
+.new {
+    background-color: darkcyan;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.new h4 {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.col-right {
+    width: 35%;
+    float: left;
+    padding: 10px;
+    color: white;
+}
+
+.popular_post {
+    background-color: blue;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.popular_post a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .col-main,
+    .col-right {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*  */
+
+.footer {
+    background-color: darkolivegreen;
+    height: 100px;
+}
